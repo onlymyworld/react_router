@@ -4,6 +4,7 @@
 
 
 import React from 'react'
+import {Link} from 'react-router'
 
 let Home = React.createClass({
 	getInitialState(){
@@ -15,7 +16,10 @@ let Home = React.createClass({
 		return (
 			<div>
 				{this.state.welcome}
+				<Link to="/linklist" >LinkList</Link>
 			</div>
 		)
 	}
 })
+
+module.exports = Home;

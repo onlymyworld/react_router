@@ -15,9 +15,9 @@ let LinkList = React.createClass({
 		return(
 			<div>
 				<ul>
-					<li><IndexLink to="/">Home</IndexLink></li>
+					<li><IndexLink to="/" activeClassName="active" onlyActiveOnIndex={true}>Home</IndexLink></li>
 					<li><Link to="/list" activeClassName="active">About</Link></li>
-					<li><Link to="/userCenter">Report</Link></li>
+					<li><Link to="/userCenter" activeClassName="active">Report</Link></li>
 				</ul>
 			</div>
 		)

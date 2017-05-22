@@ -4,8 +4,9 @@
 
 
 import React from 'react'
+import {Link} from 'react-router'
 
-let List = React.createClass({
+let UserList = React.createClass({
 	getInitialState(){
 		return{
 			data:["张三","李四"]
@@ -15,9 +16,10 @@ let List = React.createClass({
 		return(
 			<div>
 				{this.state.data}
+				<Link to="/adduser">Add user</Link>
 			</div>
 		)
 	}
 })
 
-module.exports = List;
+module.exports = UserList;
