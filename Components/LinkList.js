@@ -11,13 +11,14 @@ let LinkList = React.createClass({
 
 		}
 	},
+	contextTypes:{
+		router:React.PropTypes.object
+	},
 	render(){
 		return(
 			<div>
 				<ul>
-					<li><IndexLink to="/" activeClassName="active" onlyActiveOnIndex={true}>Home</IndexLink></li>
-					<li><Link to="/list" activeClassName="active">About</Link></li>
-					<li><Link to="/userCenter" activeClassName="active">Report</Link></li>
+
 				</ul>
 			</div>
 		)

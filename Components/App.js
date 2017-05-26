@@ -5,15 +5,18 @@
 import "../css/index.css"
 
 
+
 import React from 'react'
-class Product extends React.Component{
+import HeaderMenu from "./HeaderMenu.js"
+class App extends React.Component{
 	render(){
 		return(
 			<div>
+				<HeaderMenu></HeaderMenu>
 				{this.props.children}
 			</div>
 		)
 	}
 }
 
-module.exports = Product;
+module.exports = App;

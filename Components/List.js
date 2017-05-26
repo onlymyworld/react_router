@@ -12,11 +12,19 @@ let UserList = React.createClass({
 			data:["张三","李四"]
 		}
 	},
+	contextTypes:{
+		router:React.PropTypes.object
+	},
 	render(){
 		return(
 			<div>
-				{this.state.data}
-				<Link to="/adduser">Add user</Link>
+				{
+					this.state.data.map(function (name) {
+						return(
+							<p>{name}</p>
+						)
+					})
+				}
 			</div>
 		)
 	}

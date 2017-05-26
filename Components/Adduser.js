@@ -12,6 +12,9 @@ let AddUser = React.createClass({
 			pwd:''
 		}
 	},
+	contextTypes:{
+		router:React.PropTypes.object
+	},
 	submitHandler(event){
 		event.preventDefault();
 		const username=event.target.elements[0].value;

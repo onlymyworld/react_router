@@ -11,6 +11,8 @@ import UserCenter from './Components/UserCenter.js'
 import List from './Components/List.js'
 import LinkList from './Components/LinkList.js'
 import AddUser from './Components/Adduser.js'
+import Database from './Components/DataBase.js'
+import File from './Components/File.js'
 
 ReactDom.render(
 	<Router history={hashHistory}>
@@ -18,6 +20,8 @@ ReactDom.render(
 			<IndexRoute component={UserCenter} />   /*根路径时，默认加载的组件，相当于index.html时加载的组件*/
 			<IndexRedirect to="/home" />   /*当用户访问根路由时，将组件重定向到某个子组件*/
 			<Route path="/home" component={Home} />
+			<Route path="/database" component={Database} />
+			<Route path="/file" component={File} />
 			<Route path="/linkList" component={LinkList} />
 			<Route path="/list" component={List} />
 			<Route path="/userCenter" component={UserCenter} />

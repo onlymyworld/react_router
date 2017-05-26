@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2017/5/22.
+ * Created by YueFang on 2017/5/22.
  */
 
 
@@ -12,11 +12,13 @@ let Home = React.createClass({
 			welcome:'欢迎访问'
 		}
 	},
+	contextTypes:{
+		router:React.PropTypes.object
+	},
 	render(){
 		return (
 			<div>
 				{this.state.welcome}
-				<Link to="/linklist" >LinkList</Link>
 			</div>
 		)
 	}

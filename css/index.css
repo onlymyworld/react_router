@@ -4,3 +4,22 @@ body{
 .active{
     color:yellow;
 }
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+/*HeaderMenu*/
+.HeaderMenu{
+    width:100%;
+    background:#ccc;
+    overflow: hidden;
+}
+.HeaderMenu li{
+    list-style-type: none;
+    float: left;
+    padding:10px;
+}
+.HeaderMenu li a{
+    color:#fff;
+}

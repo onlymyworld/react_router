@@ -11,6 +11,9 @@ let UserCenter = React.createClass({
 			age:12
 		}
 	},
+	contextTypes:{
+		router:React.PropTypes.object
+	},
 	render(){
 		return (
 			<div>
